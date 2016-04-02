@@ -1,0 +1,29 @@
+﻿@model SVGEssentials.Chapters.IChapter
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chapter</title>
+</head>
+<body>
+    <div>
+        <p>@Html.Raw(Model.Title)</p>
+
+
+        @foreach (var example in Model.Examples.Values)
+        {
+            <p>@example.Ref</p>
+            <p>@example.Description</p>
+
+            @Html.RouteLink(example.Title, new { controller = "Home", action = "Example", chapterTitle = Model.Id, exampleId=example.Ref })
+        }
+
+    </div>
+</body>
+</html>

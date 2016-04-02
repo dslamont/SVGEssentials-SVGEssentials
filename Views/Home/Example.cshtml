@@ -1,0 +1,31 @@
+﻿@model SVGEssentials.Models.Examples.IExample
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html> 
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Example</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p>@Html.Raw(Model.Title)</p>
+            <p>@Html.Raw(Model.FilePath)</p>
+            <p>@Url.Content(Model.FilePath)</p>
+
+            <div>
+                <p>@Html.Raw(Model.HelpText)</p>
+            </div>
+            <div>
+
+                @Html.SVG(Model.FilePath, htmlAttributes: new { width = "1000", height = "1000" })
+            </div>
+        </div>
+    </div>
+</body>
+</html>

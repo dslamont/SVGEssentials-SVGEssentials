@@ -1,0 +1,28 @@
+﻿@model SVGEssentials.Models.Book
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HomeView</title>
+</head>
+<body>
+    <div>
+        <p>Home/Index</p>
+        <p>@Html.Raw(Model.Title)</p>
+
+        @foreach (var chapter in Model.Chapters.Values)
+        {
+
+            @Html.RouteLink(@chapter.Title, new { controller = "Home", action = "Chapter", chapterTitle = chapter.Id })
+
+            <p>Example is @chapter.Description</p>
+            
+        }
+    </div>
+</body>
+</html>
