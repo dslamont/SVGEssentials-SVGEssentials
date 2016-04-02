@@ -120,6 +120,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Example.cshtml" />
     <Content Include="Views\Home\Chapter.cshtml" />
+    <Content Include="README.md" />
+    <Content Include="LICENSE.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
