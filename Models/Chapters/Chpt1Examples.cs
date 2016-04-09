@@ -1,10 +1,8 @@
-﻿using SVGEssentials.Models.Examples;
-using SVGEssentials.Models;
-using SVGFactory;
-using SVGFactory.Elements;
-using SVGFactory.Operations;
-using SVGFactory.Paths;
-using System;
+﻿using SVGCore;
+using SVGCore.Elements;
+using SVGCore.Operations;
+using SVGCore.Paths;
+using SVGEssentials.Models.Examples;
 using System.Collections.Generic;
 using System.Web;
 

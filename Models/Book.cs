@@ -1,9 +1,7 @@
 ﻿using SVGEssentials.Chapters;
+using SVGEssentials.Models.Chapters;
 using SVGEssentials.Models.Examples;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace SVGEssentials.Models
 {
@@ -23,6 +21,7 @@ namespace SVGEssentials.Models
 
             //Add the chapters 
             Chapters.Add("chapter-1", new Chpt1Examples());
+            Chapters.Add("chapter-3", new Chpt3Examples());
 
         }
 

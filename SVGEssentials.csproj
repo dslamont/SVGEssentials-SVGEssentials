@@ -102,6 +102,7 @@
     <Content Include="App_Code\HtmlHelper.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Models\Chapters\Chpt1Examples.cs" />
+    <Compile Include="Models\Chapters\Chpt3Examples.cs" />
     <Compile Include="Models\Examples\Example.cs" />
     <Compile Include="Models\Chapters\IChapter.cs" />
     <Compile Include="Models\Chapters\NullChapter.cs" />
@@ -134,9 +135,9 @@
     <Folder Include="Files\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SVGFactory\SVGFactory.csproj">
+    <ProjectReference Include="..\SVGCore\SVGCore.csproj">
       <Project>{576fdf02-b9f0-4127-bc9c-323b40eb430c}</Project>
-      <Name>SVGFactory</Name>
+      <Name>SVGCore</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
